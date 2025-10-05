@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Waste Sorting Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Waste Sorting Dashboard</h1>
+    <div class="categories">
+        <div class="category" id="landfill">
+            <img src="{{ url_for('static', filename='images/landfill.png') }}" alt="Landfill">
+            <p>Landfill</p>
+        </div>
+        <div class="category" id="recycling">
+            <img src="{{ url_for('static', filename='images/recycling.png') }}" alt="Recycling">
+            <p>Recycling</p>
+        </div>
+        <div class="category" id="returnables">
+            <img src="{{ url_for('static', filename='images/returnables.png') }}" alt="Returnables">
+            <p>Returnables</p>
+        </div>
+        <div class="category" id="compost">
+            <img src="{{ url_for('static', filename='images/compost.png') }}" alt="Compost">
+            <p>Compost</p>
+        </div>
+    </div>
+
+    <div class="camera-container">
+        <button id="camera-button">📷 Open Camera</button>
+        <video id="camera-stream" autoplay playsinline></video>
+        <canvas id="snapshot" style="display:none;"></canvas>
+    </div>
+
+    <div id="prediction-result"></div>
+</div>
+
+<script src="{{ url_for('static', filename='js/camera.js') }}"></script>
+</body>
+</html>
