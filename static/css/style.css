@@ -16,6 +16,34 @@ h1 {
     align-items: center;
 }
 
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    background-color: #3C6444; /* your logo color */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar .brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .brand .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar .brand .company-name {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Existing category styles */
 .categories {
     display: flex;
     justify-content: space-around;
